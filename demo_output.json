@@ -1,0 +1,40 @@
+{
+  "success": true,
+  "input": "Add 1 and 1, then multiply with 10, then subtract 0.5 from it, and add 4",
+  "final_output": 23.5,
+  "steps": [
+    {
+      "tool": "add",
+      "args": {
+        "a": 1.0,
+        "b": 1.0
+      },
+      "result": 2.0
+    },
+    {
+      "tool": "multiply",
+      "args": {
+        "a": 2.0,
+        "b": 10.0
+      },
+      "result": 20.0
+    },
+    {
+      "tool": "subtract",
+      "args": {
+        "a": 20.0,
+        "b": 0.5
+      },
+      "result": 19.5
+    },
+    {
+      "tool": "add",
+      "args": {
+        "a": 19.5,
+        "b": 4.0
+      },
+      "result": 23.5
+    }
+  ],
+  "error": null
+}
